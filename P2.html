@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background: #1d1e2c;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            margin-top: 10vh;
+            padding: 10px;
+            align-items: center;
+            background: #1d1e2c;
+        }
+        .spinner{
+            width: 5rem;
+            height: 5rem;
+            display: inline-block;
+            border: 10px solid #cc00ff;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            animation: spin 1s infinite;
+        }
+
+        @keyframes spin {
+            0%{
+                transform: rotate(0);
+            }
+            50%{
+                transform: rotate(180deg);
+                border-top-color: #fc4182;
+                border-bottom-color: #80ffdb;
+                border-right-color: transparent;
+                border-left-color: transparent;
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="spinner"></span>
+    </div>
+</body>
+</html>
